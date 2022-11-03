@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My news</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/myNews.css') }}">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header_logo__wrapper">
+            <div class="logo">
+                <h1>AITU news</h1>
+            </div>
+            <div class="naming">
+                <h3>assignment 5, 2022</h3>
+            </div>
+            <div class="log-wrapper">
+                <a href="/mynews" class="mysite">My news</a>
+                <a href="/logout" class="logout">Logout</a>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <a href="/addnews" class="add_news-link">Add news</a>
+
+        {% for i in response %}
+            <div class="wrapper_news" style="margin-bottom: 20px">
+                <div class="inner_wrapper">
+                    <div class="img_wrapper">
+                        <img src={{i.image}} alt="node">
+                    </div>
+                    <div class="description">
+                        <h5 class="title">{{i.title}}</h5>
+                        <br/>
+                        <p class="descript">
+                            {{i.content}}
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+</section>
+</body>
+</html>

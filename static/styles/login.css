@@ -1,0 +1,68 @@
+.box-wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 90vw;
+    border: 2px solid grey;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.box h1{
+    font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.box a{
+    padding: 10px 20px;
+    background-color: #085ed6;
+    border-radius: 8px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input_form{
+    width: 250px;
+    padding: 8px 20px;
+    background-color: inherit;
+    border: 1px solid #000000;
+    transition: border 0.5s linear;
+    border-radius: 5px;
+}
+
+.input_form:focus{
+    border: 1px solid #085ed6;
+    transition: border 0.5s linear;
+}
+
+.btn_submit_form{
+    display: inline;
+    padding: 10px 20px;
+    width: 100px;
+    background-color: #085ed6;
+    border-radius: 8px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    margin: auto;
+}

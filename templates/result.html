@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+    <div>
+        <h1>{{official}}</h1>
+        <h3>{{weather_data['main']['temp']}}°C {{capital}}</h3>
+        <img src={{icon_url}} alt="">
+    </div>
+    <br>
+    <img class="rounded mx-auto d-block" src="{{url_for_image}}">
+    <br>
+    <h9 class="d-flex justify-content-center">Native Naming : {{nativeName}}</h9>
+    <br>
+    <h9 class="d-flex justify-content-center">Currency: {{currency}}, "{{currencySymbol}}"</h9> <br/>
+    <h9 class="d-flex justify-content-center">Capital City: {{capital}}</h9><br/>
+    <h9 class="d-flex justify-content-center">Region: {{region}} ({{subregion}})</h9><br/>
+    <h9 class="d-flex justify-content-center">Languages: {{lang}}</h9><br/>
+    <h9 class="d-flex justify-content-center">Population: {{population}}</h9><br/>
+    <h9 class="d-flex justify-content-center">Area: {{area}}</h9><br/>
+
+    <input type=button class="btn btn-outline-primary mx-auto d-block" onClick="parent.location='/'" value='go back'>
+</body>
+</html>

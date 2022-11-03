@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/login.css') }}">
+</head>
+<body>
+    <div class="box-wrapper">
+        <div class="box">
+            <h1>AITU news</h1>
+
+            <form action="/checking" method="post" >
+                <div class="input-group">
+                    <input type="email" name="email" class="input_form" placeholder="email"
+                           aria-label="email" aria-describedby="search-addon"/>
+
+                    <input type="password" name="password" class="input_form" placeholder="password"
+                           aria-label="password" aria-describedby="search-addon"/>
+
+                    <button type="submit" class="btn_submit_form">Login</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

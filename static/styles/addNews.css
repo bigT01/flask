@@ -1,0 +1,77 @@
+.container{
+    width: 85vw;
+    margin: 0 auto;
+}
+
+.header_logo__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1{
+    font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+    color: #085ed6;
+}
+
+.mysite{
+    padding: 10px;
+    background-color: inherit;
+    border: 1px solid #085ed6;
+    color: #085ed6;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.logout{
+    padding: 10px;
+    background-color: grey;
+    border: 1px solid grey;
+    color: #FFFFFF;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+header{
+    margin-bottom: 5rem;
+}
+
+.input_wrapper{
+    margin-bottom: 2rem;
+    display: flex;
+
+}
+
+label{
+    width: 20%;
+}
+
+.input_post{
+    width: 60%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #085ed6;
+}
+
+.textArea_post{
+    width: 60%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid #085ed6;
+    height: 100px;
+}
+
+.publish{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px;
+    background-color: #085ed6;
+    border: 1px solid #085ed6;
+    color: #FFFFFF;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 3rem;
+}

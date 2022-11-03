@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>addNews</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/addNews.css') }}">
+</head>
+<body>
+  <header>
+    <div class="container">
+        <div class="header_logo__wrapper">
+            <div class="logo">
+                <h1>AITU news</h1>
+            </div>
+            <div class="naming">
+                <h3>assignment 5, 2022</h3>
+            </div>
+            <div class="log-wrapper">
+                <a href="/mynews" class="mysite">My news</a>
+                <a href="/logout" class="logout">Logout</a>
+            </div>
+        </div>
+
+    </div>
+  </header>
+  <section>
+      <div class="container">
+          <h1>Post News</h1>
+
+          <form action="/posting" method="post">
+              <div class="input_wrapper">
+                  <label>Title</label>
+                  <input type="text" name="title" class="input_post"/>
+              </div>
+
+              <div class="input_wrapper">
+                  <label>Content</label>
+                  <textarea name="content" class="textArea_post"> </textarea>
+              </div>
+
+              <div class="input_wrapper">
+                  <label>Image URL</label>
+                  <input type="text" name="image" class="input_post"/>
+              </div>
+
+              <button type="submit" class="publish">Publish</button>
+          </form>
+      </div>
+  </section>
+</body>
+</html>
